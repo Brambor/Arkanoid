@@ -26,9 +26,8 @@ palka.speedX = 0 #rychlost
 
 micky = pygame.sprite.Group()
 mic = pygame.sprite.Sprite()
-mic_img = pygame.image.load("pic/mic.png").convert_alpha()
-mic.image = mic_img
-mic.rect = mic_img.get_rect()
+mic.image = pygame.image.load("pic/mic.png").convert_alpha()
+mic.rect = mic.image.get_rect()
 mic.rect.bottom = palka.rect.top
 mic.rect.left = palka.rect.left
 mic.speed = [-3.75, -3.307189138830738] #[0,-5]
